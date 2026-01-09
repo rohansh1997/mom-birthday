@@ -1,0 +1,58 @@
+.candle-container {
+  margin: 40px 0;
+}
+
+.cake {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 20px;
+}
+
+.candle {
+  width: 15px;
+  height: 60px;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+}
+
+.flame {
+  width: 20px;
+  height: 20px;
+  background: orange;
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  border-radius: 50%;
+  animation: flicker 0.15s infinite alternate;
+}
+
+@keyframes flicker {
+  from {
+    transform: translateX(-50%) rotate(45deg) scale(1);
+  }
+  to {
+    transform: translateX(-50%) rotate(45deg) scale(1.1);
+  }
+}
+
+.candle-container button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background: #ff7a00;
+  color: white;
+  cursor: pointer;
+}
+
+.wish-text {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  animation: fadeIn 1.5s ease;
+  color: black;
+}

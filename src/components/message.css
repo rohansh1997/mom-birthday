@@ -1,0 +1,11 @@
+.message {
+  color: black;
+  max-width: 600px;
+  margin: 30px auto;
+  font-size: 1.2rem;
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  animation: slideUp 1.5s ease;
+}

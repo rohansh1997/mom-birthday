@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to bottom, #ffe6e6, #fff);
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.app-container {
+  display: flex;
+  width: 98vw;
+  justify-content: center;
+}
+
+.app {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  animation: fadeIn 2s ease;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem !important;
+  }
+}
+
+.enter-screen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #ffdde1, #ee9ca7);
+  text-align: center;
+}
+
+.enter-screen h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.enter-screen button {
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 30px;
+  background: #ff4d6d;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.enter-screen button:hover {
+  transform: scale(1.05);
+}
