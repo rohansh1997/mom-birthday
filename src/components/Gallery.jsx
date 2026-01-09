@@ -42,6 +42,8 @@ const FlipCard = ({ img, message }) => {
       className={`flip-card ${flipped ? "flipped" : ""}`}
       onClick={() => setFlipped(!flipped)}
     >
+      {!flipped && <span className="tap-hint">Tap to Reveal 💖</span>}
+
       <div className="flip-inner">
         <div className="flip-front">
           <img src={img} alt="memory" />
